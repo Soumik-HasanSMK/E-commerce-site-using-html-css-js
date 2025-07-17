@@ -26,6 +26,10 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    background-color: #b3f1d7;
+}
+
 a {
     text-decoration: none;
     color: inherit;
