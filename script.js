@@ -3,17 +3,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const products = [
         {
             id: 1,
-            name: "Premium Wooden Chair",
-            price: 129.99,
-            oldPrice: 149.99,
-            image: "product1.jpg",
-            category: "Furniture",
-            description: "Handcrafted from solid oak with a natural finish. This elegant chair features a comfortable curved backrest and sturdy construction. Perfect for dining rooms or as an accent piece in your living space.",
+            name: "Casio FX-991ES Plus",
+            price: 2200,
+            oldPrice: 2500,
+            image: "products/calculator.jpg",
+            category: "Scientific Calculator",
+            description: "Casio FX-991ES Plus (2nd Edition) Non-Programmable Scientific Calculator Black",
             details: [
-                "Dimensions: 18.5\" W x 20.5\" D x 33\" H",
-                "Weight: 12 lbs",
-                "Materials: Solid oak wood, linen upholstery",
-                "Assembly required"
+                "Model: fx-991ES",
+                "Display Type: LCD Display",
+                "Number of Digits: 12 Digit",
+                "Dimensions: 165.5mm W x 77mm D x 11.1mm H",
             ],
             rating: 4.8,
             reviews: 124,
@@ -21,16 +21,17 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             id: 2,
-            name: "Modern Glass Table",
-            price: 299.99,
-            image: "product2.jpg",
-            category: "Furniture",
-            description: "Sleek tempered glass top with stainless steel legs. This contemporary table is both durable and stylish, making it perfect for modern living spaces or office environments.",
+            name: "Sonata Hand Watch",
+            price: 3000,
+            oldPrice: 3550,
+            image: "products/watch.jpg",
+            category: "Hand Watch",
+            description: "Sonata Quartz Analog Black Dial Metal Strap Watch for Men-NS7133KM03",
             details: [
-                "Dimensions: 47\" W x 23.5\" D x 29.5\" H",
-                "Weight: 45 lbs",
-                "Materials: 10mm tempered glass, stainless steel",
-                "No assembly required"
+                "Case Diameter: 47mm",
+                "Band Color: Silver",
+                "Weight: 190g",
+                "Country of Origin: India"
             ],
             rating: 4.6,
             reviews: 89,
@@ -38,17 +39,17 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             id: 3,
-            name: "Cozy Wool Blanket",
-            price: 89.99,
-            oldPrice: 109.99,
-            image: "product3.jpg",
-            category: "Home",
-            description: "100% merino wool for ultimate comfort and warmth. This premium blanket is perfect for chilly evenings, providing exceptional insulation while remaining breathable.",
+            name: "One plus Airbuds",
+            price: 650,
+            oldPrice: 850,
+            image: "products/tws.jpg",
+            category: "Wireless Earbuds",
+            description: "Oneplus Airairpods Pro Wireless TWS Earbuds One plus Airbuds ।। Wireless Earbuds.",
             details: [
-                "Dimensions: 60\" x 80\"",
-                "Weight: 3.5 lbs",
-                "Materials: 100% merino wool",
-                "Machine wash cold, lay flat to dry"
+                "Usage Time: About 3 hours (Headset)",
+                "Charging Time: About 1.5 hours (Headset)",
+                "Transmission Distance: >10m",
+                "Battery Capacity: 35mAh"
             ],
             rating: 4.9,
             reviews: 215,
@@ -56,16 +57,17 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             id: 4,
-            name: "Ceramic Coffee Mug Set",
-            price: 34.99,
-            image: "product4.jpg",
-            category: "Kitchen",
-            description: "Set of 4 hand-glazed ceramic mugs. Each mug is uniquely crafted with a comfortable handle and holds 12oz of your favorite beverage.",
+            name: "CLogitech B170 Wireless Mouse",
+            price: 990,
+            oldPrice: 109,
+            image: "products/mouse.jpg",
+            category: "Wireless mouse",
+            description: "Logitech B170 is an affordable wireless mouse with reliable connectivity, 12 months battery life.",
             details: [
-                "Dimensions: 3.5\" diameter x 4.5\" H",
-                "Weight: 1.2 lbs each",
-                "Materials: Stoneware ceramic",
-                "Microwave and dishwasher safe"
+                "Color: White",
+                "Dimensions: 97.7mm (3.85 in) W x 61.5mm (2.42 in) D x 35.2mm (1.39 in) H",
+                "Weight: 70.5g (2.49 oz) with battery",
+                "Battery Life: 12 months"
             ],
             rating: 4.7,
             reviews: 178,
@@ -188,9 +190,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     <span class="category">${product.category}</span>
                     <h3>${product.name}</h3>
                     <div class="price">
-                        $${product.price.toFixed(2)}
-                        ${product.oldPrice ? `<span class="old-price">$${product.oldPrice.toFixed(2)}</span>` : ''}
-                        ${product.oldPrice ? `<span class="discount">Save $${(product.oldPrice - product.price).toFixed(2)}</span>` : ''}
+                        ৳${product.price.toFixed(2)}
+                        ${product.oldPrice ? `<span class="old-price">৳${product.oldPrice.toFixed(2)}</span>` : ''}
+                        ${product.oldPrice ? `<span class="discount">Save ৳${(product.oldPrice - product.price).toFixed(2)}</span>` : ''}
                     </div>
                     <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
                     <button class="view-details" data-id="${product.id}">View Details</button>
@@ -286,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <img src="${item.image}" alt="${item.name}">
                 <div class="cart-item-info">
                     <div class="cart-item-title">${item.name}</div>
-                    <div class="cart-item-price">$${item.price.toFixed(2)}</div>
+                    <div class="cart-item-price">৳${item.price.toFixed(2)}</div>
                 </div>
                 <div class="cart-item-quantity">
                     <button class="quantity-btn minus" data-id="${item.id}">-</button>
@@ -392,8 +394,8 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="product-modal-details">
                 <h2 class="product-modal-title">${product.name}</h2>
                 <div class="product-modal-price">
-                    $${product.price.toFixed(2)}
-                    ${product.oldPrice ? `<span class="old-price">$${product.oldPrice.toFixed(2)}</span>` : ''}
+                    ৳${product.price.toFixed(2)}
+                    ${product.oldPrice ? `<span class="old-price">৳${product.oldPrice.toFixed(2)}</span>` : ''}
                 </div>
                 <div class="rating">
                     ${Array(Math.floor(product.rating)).fill('<i class="fas fa-star"></i>').join('')}
@@ -414,7 +416,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <button class="plus">+</button>
                     </div>
                     <button class="btn product-modal-add-to-cart" data-id="${product.id}">
-                        Add to Cart - $${product.price.toFixed(2)}
+                        Add to Cart - ৳${product.price.toFixed(2)}
                     </button>
                 </div>
                 
