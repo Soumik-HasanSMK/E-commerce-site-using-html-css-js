@@ -514,8 +514,8 @@ nav ul li:hover::after {
 }
 
 .about-container {
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     align-items: center;
     gap: 50px;
@@ -523,7 +523,7 @@ nav ul li:hover::after {
 
 .about-image {
     flex: 1;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
