@@ -3,7 +3,7 @@ This is a modern, responsive E-commerce website developed using **HTML**, **CSS*
 
 
 ## 🌐 Live Preview
-👉 [Click here to view the live site](https://soumik-hasansmk.github.io/E-commerce-site-using-html-css-js/)
+👉 https://soumik-hasansmk.github.io/E-commerce-site-using-html-css-js/
 
 
 ## 🚀 Features
