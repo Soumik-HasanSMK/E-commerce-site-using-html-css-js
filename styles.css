@@ -308,7 +308,7 @@ nav ul li:hover::after {
 
 /* Products Section */
 .products {
-    padding: 80px 0;
+    padding: 30px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -547,7 +547,7 @@ nav ul li:hover::after {
 .testimonials {
     margin-left: 20px;
     margin-right: 20px;
-    padding: 80px 0;
+    padding: 50px;
     text-align: center;
 }
 
@@ -609,8 +609,8 @@ nav ul li:hover::after {
 .contact-container {
     display: flex;
     gap: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .contact-info {
